@@ -1,0 +1,23 @@
+{
+  "name": "expressjs-google-auth",
+  "version": "1.0.0",
+  "description": "ExpressJS app with Google authorisation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galdranorn/expressJS-google-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galdranorn/expressJS-google-auth/issues"
+  },
+  "homepage": "https://github.com/galdranorn/expressJS-google-auth#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
