@@ -5,13 +5,16 @@ var app = express();
 var stringifyFile;
 
 app.use(bodyParser.json());
-
-app.get('/getNote', function (req, res) {
+app.use('/', function (req, res, next) {
     fs.readFile('./test.json', 'utf8', function(err, data) {
         if (err) throw err;
         stringifyFile = data
-        res.send(data);
+        next();
     })
+})
+
+app.get('/getNote', function (req, res) {
+    res.send(stringifyFile);
 });
 
 app.post('/updateNote/:note', function (req, res) {
