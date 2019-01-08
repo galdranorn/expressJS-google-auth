@@ -2,10 +2,11 @@ doctype html
 html
     head
         title="Google Authorisation App"
+        link(rel='stylesheet', href='css/style.css')
     body
         include ./header.pug
         div.welcome
-          h1 Sorry!
-          h2 Page does not exist
-        a.log-in#log-in(href="/main") Log in
+            h1.error Sorry!
+            h2 Page does not exist
+            a.okay#log-in(href="/main") Okay!
         include ./footer.pug

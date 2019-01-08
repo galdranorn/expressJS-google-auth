@@ -2,10 +2,11 @@ doctype html
 html
     head
         title="Google Authorisation App"
+        link(rel='stylesheet', href='css/style.css')
     body
         include ./header.pug
         div.welcome
-          h1 Welcome to Google Authorisation App!
-          h2 You need to log in to continue
-        a.log-in#log-in(href="/auth/google") Log in
+            h1 Welcome to Google Authorisation App!
+            h2 You need to log in to continue
+            a.log-in#log-in(href="/auth/google") Log in
         include ./footer.pug

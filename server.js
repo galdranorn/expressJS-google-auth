@@ -31,6 +31,8 @@ app.set('views', './views');
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/css',  express.static(__dirname + '/css'));
+
 //app routes
 app.get('/', function(req, res){
     res.render('main', { user: req.user });
